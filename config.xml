@@ -16,10 +16,10 @@
    <!-- Full Screen -->
    <preference name="fullscreen" value="true" />
 
-   <name>Config.xml</name>
+   <name>Kombo</name>
 
    <description>
-      An example for phonegap build docs.
+      Combine words to make silly sentences and compete with your friends.
    </description>
 
    <author href="http://nehmsmann.com" email="jordyn@nehmsmann.com">
