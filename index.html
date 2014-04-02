@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+Gray/Purple: #686077;
+Pink/Purple: #641F5E;
+Yellow: #EDD58F;
+Gold: #C2BF92;
+Green: #66AC92;
+
+Font Awesome Icons: http://fortawesome.github.io/Font-Awesome/cheatsheet/
+-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Kombo</title>
+		<link rel="stylesheet" href="themes/Kombo.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+        
+        <script>
+		$(document).on("pagecreate","#page7",function(e){
+			$(".gameword").on("tap",function(){
+  				$(this).appendTo('#sentencewords');
+				$(this).on("tap", function(){
+					$(this).appendTo('.gamewords');
+				});
+				e.stopPropagation();   
+    			return false; 
+			});
+			/*$(".sentenceword").on("tap",function(e){
+				$(this).removeclass('sentenceword');
+				$(this).addClass('gameword');
+				$(this).prependTo('.gamewords');
+				e.stopPropagation();   
+    			return false;   
+			});*/
+		});
+</script>
+        
+        <style>
+		a {
+			text-decoration: none;
+		}
+		a.thebuttons {
+			width: 100%;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			text-align: center;
+			color: white;
+			background-color: #686077;
+			display: block;
+			text-shadow: none;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			font-size: 16px;
+			margin: auto;
+			margin-top: 4px;
+			margin-bottom: 4px;
+			font-family: Myriad Pro;
+			font-weight: 100;
+		}
+		a.thebuttons:hover {
+			background-color: #d2ccde;
+		}
+		.gameword, .sentenceword {
+			padding: 10px; 
+			margin-right: 5px;
+			background-color: #EDD58F;
+			color: white;
+			text-transform: lowercase;
+			font-weight: lighter;
+			font-size: 14px;
+			line-height: 14px;
+			font-family: Myriad Pro;
+			margin-top: 3px;
+			margin-bottom: 3px;
+			display:inline-block;
+		}
+		.sentenceword {
+			cursor: pointer;
+		}
+		.gamewords {
+			width: 100%;
+			line-height: 20px;
+			text-align: center;
+		}
+		#sentencewords {
+			width: 98%;
+			line-height: 24px;
+			text-align: left;
+			background-color: #F7ECCD;
+			padding: 5px 1% 5px 1%;
+			display: block;
+			min-height: 34px;
+		}
+		</style>
+	</head>
+	<body>
+		<div data-role="page" id="page1" data-theme="a">
+			<div data-role="content" data-theme="a">
+			
+			<a href="#page2" data-transition="fade" class="thebuttons" style="color: white;">New Game</a>
+            <a href="#page3" data-transition="slide" class="thebuttons" style="color: white;">High Scores</a>
+            <a href="#page4" data-transition="slide" class="thebuttons" style="color: white;">Settings</a>
+            
+            <h1>Games</h1>
+            <a href="#page5" data-transition="slide" class="thebuttons" style="color: white;">Game 1</a>
+            <a href="#page6" data-transition="slide" class="thebuttons" style="color: white;">Game 2</a>
+            
+			</div>
+		</div>
+        
+        
+        <div data-role="page" id="page2" data-theme="a">
+			<div data-role="content" data-theme="a">
+			
+			<p>Please enter the usernames of the people you would like to join your game.</p>
+            
+            <textarea style="width:100%; border-radius: 0px; border: 1px solid #333; height: 50px; margin-bottom: 30px; margin: auto; display: block;"></textarea>
+            <br>
+            <a href="#page7" data-transition="fade" class="thebuttons" style="color: white;">Start Game</a>
+            <a href="#page1" data-transition="fade" class="thebuttons" style="color: white;">Go Back</a>
+            
+			</div>
+		</div>
+        
+        
+        <div data-role="page" id="page7" data-theme="a">
+			<div data-role="content" data-theme="a">
+			
+			<div id="sentencewords"></div>
+            
+            <div class="gamewords">
+            <p><span class="gameword">The</span> <span class="gameword">I</span> <span class="gameword">love</span> <span class="gameword">offered</span> <span class="gameword">three</span> <span class="gameword">gnarly</span><span class="gameword">overgrown</span><span class="gameword">porpoises</span> <span class="gameword">to</span><span class="gameword">in</span><span class="gameword">minutes</span><span class="gameword">men</span></p>
+            </div><!--end gamewords-->
+
+            <a href="#page1" data-transition="fade" class="thebuttons" style="color: white;">Home</a>
+            
+			</div>
+		</div>
+	</body>
+</html>
