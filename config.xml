@@ -25,6 +25,19 @@
    <author href="http://nehmsmann.com" email="jordyn@nehmsmann.com">
       Jordyn Nehmsmann
    </author>
+   
+   <!-- Icon -->
+   <icon src="images/icon.png" />
+
+<icon gap:density="ldpi" gap:platform="android" src="images/icon.png" />
+<icon gap:density="mdpi" gap:platform="android" src="images/icon.png" />
+<icon gap:density="hdpi" gap:platform="android" src="images/icon.png" />
+<icon gap:density="xhdpi" gap:platform="android" src="images/icon.png" />
+
+<icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
+<icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
+<icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
+<icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
 
    <!-- Splash Screen -->
    <gap:splash src="images/logo.png" gap:platform="ios" width="320" height="480" />
