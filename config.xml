@@ -27,15 +27,15 @@
    </author>
 
    <!-- Splash Screen -->
-   <gap:splash src="images/splash.gif" gap:platform="ios" width="320" height="480" />
-   <gap:splash src="images/splash.gif" gap:platform="ios" width="640" height="960" />
-   <gap:splash src="images/splash.gif" gap:platform="ios" width="640" height="1136" />
-   <gap:splash src="images/splash.gif" gap:platform="ios" width="1024" height="748" />
-   <gap:splash src="images/splash.gif" gap:platform="ios" width="768" height="1004" />
+   <gap:splash src="images/logo.png" gap:platform="ios" width="320" height="480" />
+   <gap:splash src="images/logo.png" gap:platform="ios" width="640" height="960" />
+   <gap:splash src="images/logo.png" gap:platform="ios" width="640" height="1136" />
+   <gap:splash src="images/logo.png" gap:platform="ios" width="1024" height="748" />
+   <gap:splash src="images/logo.png" gap:platform="ios" width="768" height="1004" />
    <!-- retina iPad support: PhoneGap 2.5.0+ only -->
-   <gap:splash src="images/splash.gif" gap:platform="ios" width="2048" height="1496" />
-   <gap:splash src="images/splash.gif" gap:platform="ios" width="1536" height="2008" />
+   <gap:splash src="images/logo.png" gap:platform="ios" width="2048" height="1496" />
+   <gap:splash src="images/logo.png" gap:platform="ios" width="1536" height="2008" />
    <!-- Android -->
-   <preference name="splashscreen" value="iamges/splash.gif" />
+   <preference name="splashscreen" value="images/splash.gif" />
 
 </widget>
