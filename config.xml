@@ -36,6 +36,11 @@
    <gap:splash src="images/logo.png" gap:platform="ios" width="2048" height="1496" />
    <gap:splash src="images/logo.png" gap:platform="ios" width="1536" height="2008" />
    <!-- Android -->
-   <preference name="splashscreen" value="images/splash.gif" />
+   <preference name="SplashScreen" value="screen" />
+   <preference name="SplashScreenDelay" value="10000" />
+   <gap:splash src="images/logo.9.png" gap:platform="android" width="960" height="720" />
+   <gap:splash src="images/logo.9.png" gap:platform="android" width="640" height="480" />
+   <gap:splash src="images/logo.9.png" gap:platform="android" width="470" height="320" />
+   <gap:splash src="images/logo.9.png" gap:platform="android" width="426" height="320" />
 
 </widget>
