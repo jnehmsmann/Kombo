@@ -23,15 +23,72 @@ CAtfeesh12
 		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
         
         <script>
+		//Jordyn you can remove the console logs
 		$(document).on("pagecreate","#page7",function(e){
-			$(".gameword").on("tap",function(){
-  				$(this).appendTo('#sentencewords');
-				$(this).on("tap", function(){
-					$(this).appendTo('.gamewords');
-				});
+		 do{
+			
+				$(".gameword").bind("tap",function(e){
+  					$(this).appendTo('#sentencewords');
+  					console.log($(this) + '1');
+				
+					$(this).on("tap", function(){
+						$(this).appendTo('.gamewords');
+						console.log($(this) + '2');
+				
+				
+						$(this).on("tap", function(){
+							$(this).appendTo('#sentencewords');
+  							console.log($(this) + '3');
+  					
+  						
+  							$(this).on("tap", function(){
+								$(this).appendTo('.gamewords');
+								console.log($(this) + '4');
+								
+								$(this).on("tap", function(){
+							$(this).appendTo('#sentencewords');
+  							console.log($(this) + '5');
+  					
+  						
+  							$(this).on("tap", function(){
+								$(this).appendTo('.gamewords');
+								console.log($(this) + '6');
+							
+							$(this).on("tap", function(){
+							$(this).appendTo('#sentencewords');
+  							console.log($(this) + '7');
+  					
+  						
+  							$(this).on("tap", function(){
+								$(this).appendTo('.gamewords');
+								console.log($(this) + '8');
+								
+								$(this).on("tap", function(){
+							$(this).appendTo('#sentencewords');
+  							console.log($(this) + '9');
+  					
+  						
+  							$(this).on("tap", function(){
+								$(this).appendTo('.gamewords');
+								console.log($(this) + '10');
+							});
+							});
+							});
+							});
+							});
+							
+							
+								});
+							});
+  						});
+  					});
+			}); //end bind
 				e.stopPropagation();   
     			return false; 
-			});
+    			
+		
+		 } while(true);		
+				
 			/*$(".sentenceword").on("tap",function(e){
 				$(this).removeclass('sentenceword');
 				$(this).addClass('gameword');
@@ -39,10 +96,40 @@ CAtfeesh12
 				e.stopPropagation();   
     			return false;   
 			});*/
-		});
+			
+		}); //end on
 </script>
+
+<script>
+			$(document).on("pagecreate","#page8",function(e){
+				$( ":mobile-pagecontainer" ).pagecontainer( "change", "#page9");
+			});
+			</script>
         
         <style>
+		@font-face{
+			font-family: Neou;
+			src: url('fonts/Neou-Light.ttf'),
+		}
+		h1{
+			padding-top: 15px;
+			padding-bottom: 3px;
+			text-align: center;
+			color: #686077;
+			font-family: Neou;
+			margin-bottom: -10px;
+			font-size: 45px;
+		}
+		.yellow{
+			color: #C2BF92;
+		}
+		#page1 img, #page8 img, #login img{
+			width: 50%;
+			margin-top: 20px;
+			text-align: center;
+			margin-right: 25%;
+			margin-left: 25%;
+		}
 		a {
 			text-decoration: none;
 		}
@@ -66,6 +153,16 @@ CAtfeesh12
 		}
 		a.thebuttons:hover {
 			background-color: #d2ccde;
+		}
+		textarea.start{
+			width: 100%;
+			border: 0px;
+			background-color: white;
+			height: 150px;
+			border-radius: 0px; 
+			margin-bottom: 30px; 
+			margin: auto; 
+			display: block;
 		}
 		.gameword, .sentenceword {
 			padding: 10px; 
@@ -98,19 +195,60 @@ CAtfeesh12
 			display: block;
 			min-height: 34px;
 		}
+		hr {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 100%;
+			border: 0px;
+			background-color: #66AC92;
+			height: 2px;
+		}
+		#login p{
+			font-size: 11px;
+			margin-top: -3px;
+			margin-bottom: 25px;
+		}
 		</style>
 	</head>
 	<body>
+    <div data-role="page" id="login" data-theme="a">
+			<div data-role="content" data-theme="a">
+			
+            <img src="images/logo_image.png" />
+            <h1 style="font-size: 60px; margin-top: -20px;">Kom<span class="yellow" style="letter-spacing: -22px;">bo</span></h1>
+			<form>
+            <input type="text" style="background-color: white; border-radius: 0px;">
+            <p>Username</p>
+            <input type="password" style="background-color: white; border-radius: 0px;">
+            <p>Password</p>
+            
+            <a href="#page1" data-transition="slide" class="thebuttons" style="color: white;">Login</a>
+            <a href="#page1" data-transition="slide" class="thebuttons" style="color: white;">Login With Facebook</a>
+            
+            <hr>
+            
+            <a href="#page1" data-transition="slide" class="thebuttons" style="color: white;">Sign Up</a>
+            <a href="#page1" data-transition="slide" class="thebuttons" style="color: white;">Sign Up With Facebook</a>
+            
+            
+            
+			</div>
+		</div>
+    
+    
 		<div data-role="page" id="page1" data-theme="a">
 			<div data-role="content" data-theme="a">
 			
+            <h1 style="font-size: 60px; margin-top: -20px;">Kom<span class="yellow" style="letter-spacing: -22px;">bo</span></h1>
 			<a href="#page2" data-transition="fade" class="thebuttons" style="color: white;">New Game</a>
-            <a href="#page3" data-transition="slide" class="thebuttons" style="color: white;">High Scores</a>
-            <a href="#page4" data-transition="slide" class="thebuttons" style="color: white;">Settings</a>
+            <a href="#page3" data-transition="fade" class="thebuttons" style="color: white;">High Scores</a>
+            <a href="#page4" data-transition="fade" class="thebuttons" style="color: white;">Settings</a>
             
-            <h1>Games</h1>
-            <a href="#page5" data-transition="slide" class="thebuttons" style="color: white;">Game 1</a>
-            <a href="#page6" data-transition="slide" class="thebuttons" style="color: white;">Game 2</a>
+            <h1>Gam<span class="yellow">es</span></h1>
+            <a href="#page9" data-transition="fade" class="thebuttons" style="color: white;">Game 1</a>
+            <a href="#page6" data-transition="fade" class="thebuttons" style="color: white;">Game 2</a>
+            
+            <img src="images/logo_image.png" />
             
 			</div>
 		</div>
@@ -121,11 +259,21 @@ CAtfeesh12
 			
 			<p>Please enter the usernames of the people you would like to join your game.</p>
             
-            <textarea style="width:100%; border-radius: 0px; border: 1px solid #333; height: 50px; margin-bottom: 30px; margin: auto; display: block;"></textarea>
+            <textarea class="start" style="background-color: #ffffff;"></textarea>
             <br>
             <a href="#page7" data-transition="fade" class="thebuttons" style="color: white;">Start Game</a>
             <a href="#page1" data-transition="fade" class="thebuttons" style="color: white;">Go Back</a>
             
+			</div>
+		</div>
+        
+        
+        <div data-role="page" id="page4" data-theme="a">
+			<div data-role="content" data-theme="a">
+			
+			<h1>Settin<span class="yellow">gs</span></h1>
+            
+            <a href="#login" data-transition="slide" data-direction="reverse" class="thebuttons" style="color: white;">Logout</a>
 			</div>
 		</div>
         
@@ -139,6 +287,28 @@ CAtfeesh12
             <p><span class="gameword">The</span> <span class="gameword">I</span> <span class="gameword">love</span> <span class="gameword">offered</span> <span class="gameword">three</span> <span class="gameword">gnarly</span><span class="gameword">overgrown</span><span class="gameword">porpoises</span> <span class="gameword">to</span><span class="gameword">in</span><span class="gameword">minutes</span><span class="gameword">men</span></p>
             </div><!--end gamewords-->
 
+			<a href="#page8" data-transition="fade" class="thebuttons" style="color: white;">Submit</a>
+            <a href="#page1" data-transition="fade" class="thebuttons" style="color: white;">Home</a>
+            
+			</div>
+		</div>
+        
+        
+        <div data-role="page" id="page8" data-theme="a">
+			<div data-role="content" data-theme="a">
+			<span style="color: #66AC92;">Adding your sentence to the queue...</span>
+            
+            <img src="images/spinner.gif" />
+            <p></p>
+            <div align="right" style="color:#66AC92;">...Please wait a moment</div>
+            
+			</div>
+		</div>
+        
+        <div data-role="page" id="page9" data-theme="a">
+			<div data-role="content" data-theme="a">
+			Once everyone has submitted their sentences, you can vote on your favorite.
+            
             <a href="#page1" data-transition="fade" class="thebuttons" style="color: white;">Home</a>
             
 			</div>
