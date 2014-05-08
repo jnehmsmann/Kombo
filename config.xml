@@ -55,5 +55,9 @@
    <gap:splash src="images/logo.9.png" gap:platform="android" width="640" height="480" />
    <gap:splash src="images/logo.9.png" gap:platform="android" width="470" height="320" />
    <gap:splash src="images/logo.9.png" gap:platform="android" width="426" height="320" />
+   
+   
+   <!--INTERACT WITH CONTACTS-->
+   <gap:plugin name="org.apache.cordova.contacts" version="0.2.9" />
 
 </widget>

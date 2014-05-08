@@ -105,6 +105,25 @@ CAtfeesh12
 				$( ":mobile-pagecontainer" ).pagecontainer( "change", "#page9");
 			});
 			</script>
+            
+            <script>
+			$(document).on("pagecreate","#page2",function(e){
+			function onSuccess(contacts) {
+    alert('Found ' + navigator.contacts.length + ' navigator.contacts.');
+};
+
+function onError(contactError) {
+    alert('onError!');
+};
+
+// find all contacts with 'Bob' in any name field
+var options      = new ContactFindOptions();
+options.filter   = "Jordyn";
+options.multiple = true;
+var fields       = ["displayName", "name"];
+navigator.contacts.find(fields, onSuccess, onError, options);
+			});
+			</script>
         
         <style>
 		@font-face{
