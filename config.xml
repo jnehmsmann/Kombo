@@ -58,6 +58,6 @@
    
    
    <!--INTERACT WITH CONTACTS-->
-   <gap:plugin name="org.apache.cordova.contacts" version="0.2.9" />
+   <!--<gap:plugin name="org.apache.cordova.contacts" version="0.2.9" />-->
 
 </widget>

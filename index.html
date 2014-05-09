@@ -106,24 +106,7 @@ CAtfeesh12
 			});
 			</script>
             
-            <script>
-			$(document).on("pagecreate","#page2",function(e){
-			function onSuccess(contacts) {
-    alert('Found ' + navigator.contacts.length + ' navigator.contacts.');
-};
-
-function onError(contactError) {
-    alert('onError!');
-};
-
-// find all contacts with 'Bob' in any name field
-var options      = new ContactFindOptions();
-options.filter   = "Jordyn";
-options.multiple = true;
-var fields       = ["displayName", "name"];
-navigator.contacts.find(fields, onSuccess, onError, options);
-			});
-			</script>
+           
         
         <style>
 		@font-face{
@@ -276,9 +259,27 @@ navigator.contacts.find(fields, onSuccess, onError, options);
         <div data-role="page" id="page2" data-theme="a">
 			<div data-role="content" data-theme="a">
 			
-			<p>Please enter the usernames of the people you would like to join your game.</p>
+			<p>Please choose the contacts of the people you would like to join your game.</p>
             
-            <textarea class="start" style="background-color: #ffffff;"></textarea>
+            <!-- <script>
+			$(document).on("pagecreate","#page2",function(e){
+			function onSuccess(contacts) {
+    alert('Found ' + navigator.contacts.length + ' navigator.contacts.');
+};
+
+function onError(contactError) {
+    alert('onError!');
+};
+
+// find all contacts with 'Bob' in any name field
+var options      = new ContactFindOptions();
+options.filter   = "Jordyn";
+options.multiple = true;
+var fields       = ["displayName", "name"];
+navigator.contacts.find(fields, onSuccess, onError, options);
+			});
+			</script>-->
+            
             <br>
             <a href="#page7" data-transition="fade" class="thebuttons" style="color: white;">Start Game</a>
             <a href="#page1" data-transition="fade" class="thebuttons" style="color: white;">Go Back</a>
